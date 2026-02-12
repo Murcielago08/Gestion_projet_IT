@@ -1,0 +1,56 @@
+qu'es ce que la gestion de projet ?
+
+gestion de l'équipe savoir qui fait quoi ainsi que la difficultés des tâches
+
+savoir prioriser les tâches en fonction de ce qu'il y a à faire pour le trimestre
+
+orga échange/reunion pour savoir les points précédents
+
+Faire des réunion quotidienne pour savoir l'avancer/ les problèmes de chaque personnes
+
+
+
+La gestion de projet est l’ensemble des méthodes et outils permettant
+d’organiser, planifier et piloter un projet afin d’atteindre un objectif
+précis dans un délai, un budget et un périmètre définis.
+
+Un projet est temporaire, unique et orienté vers un résultat concret.
+
+Les 5 étapes principales :
+
+1.  Initiation
+
+-   Identifier le besoin
+-   Définir les objectifs
+-   Identifier les parties prenantes
+-   Valider la faisabilité
+
+2.  Planification
+
+-   Décomposer le projet en tâches
+-   Estimer les délais et les coûts
+-   Allouer les ressources
+-   Identifier les risques
+-   Établir un planning
+
+3.  Exécution
+
+-   Réaliser les tâches prévues
+-   Coordonner l’équipe
+-   Assurer la communication
+
+4.  Suivi et contrôle
+
+-   Mesurer l’avancement
+-   Comparer avec le planning et le budget
+-   Gérer les écarts et ajuster
+
+5.  Clôture
+
+-   Livrer le projet
+-   Valider les résultats
+-   Faire un bilan (retour d’expérience)
+
+En résumé : La gestion de projet consiste à structurer et piloter un
+ensemble d’actions pour atteindre un objectif tout en maîtrisant délai,
+coût, périmètre et qualité.
