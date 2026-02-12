@@ -9,7 +9,6 @@ orga échange/reunion pour savoir les points précédents
 Faire des réunion quotidienne pour savoir l'avancer/ les problèmes de chaque personnes
 
 
-
 La gestion de projet est l’ensemble des méthodes et outils permettant
 d’organiser, planifier et piloter un projet afin d’atteindre un objectif
 précis dans un délai, un budget et un périmètre définis.
