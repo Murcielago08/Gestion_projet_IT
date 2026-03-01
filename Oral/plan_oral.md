@@ -97,17 +97,17 @@ Cet exemple illustre le principe d’amélioration continue propre à Kanban.
 
 ### Forces
 
-- Grande flexibilité  
+- Grande flexibilité (revoir le therme)
 - Adaptation facile à l’organisation existante  
 - Idéal pour les activités de maintenance et de support  
 - Amélioration progressive sans transformation brutale  
+- Rapididté de feedback
 
-### Limites
+### Différence entre les autres framework
 
-- Moins structurant que d’autres frameworks  
-- Absence de cadre temporel fixe  
-- Risque d’absence de vision long terme  
-- Nécessite une discipline forte sur les limites WIP  
+- Moins structurant que d’autres frameworks(vraiment une limite ?)
+- Absence de cadre temporel fixe (pas de cycle en V)
+- Une discipline sur les limites WIP  
 
 ---
 
@@ -141,6 +141,7 @@ Scrumban conserve généralement :
 - un backlog priorisé  
 - des rôles définis (Product Owner, équipe)  
 - des réunions régulières  
+- Temporalité de sprints
 
 Il introduit :
 
@@ -157,9 +158,9 @@ Scrumban représente donc une transition entre un cadre structuré et un modèle
 
 | Critère | Scrum | Kanban | Scrumban |
 |----------|--------|----------|------------|
-| Organisation du travail | Sprints fixes | Flux continu | Sprints souples ou flux continu |
+| Organisation du travail | Sprints fixes | Flux continu | Objectif de livraison de valeur |
 | Limitation du WIP | Non obligatoire | Obligatoire | Obligatoire |
-| Rôles définis | Oui | Non imposés | Généralement conservés |
+| Rôles définis | Oui | Non imposés | Oui |
 | Gestion des urgences | Complexe en cours de sprint | Flexible | Plus flexible |
 
 Kanban privilégie l’optimisation du flux.  
@@ -172,14 +173,14 @@ Scrumban cherche un équilibre entre les deux.
 
 ### Kanban est particulièrement adapté :
 
-- aux équipes de support  
+- aux équipes de support gestion correction bug Prod
 - aux environnements instables  
 - aux projets avec flux continu de demandes  
 
 ### Scrumban est pertinent :
 
 - pour des équipes Scrum souhaitant évoluer  
-- dans des contextes avec interruptions fréquentes  
+- dans des contextes complexe/avec interruptions fréquentes  
 - lorsqu’un équilibre entre cadre et flexibilité est nécessaire  
 
 ---
