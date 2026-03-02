@@ -2,9 +2,7 @@
 
 ## Introduction
 
-L’objectif de cette présentation est d’expliquer le fonctionnement de la méthode Kanban dans un contexte réel d’équipe projet,  
--------------SCRUM  
-puis de montrer comment cette approche a évolué vers un modèle hybride appelé Scrumban.
+L’objectif de cette présentation est d’expliquer le fonctionnement des méthodes Kanban et scrum, puis de montrer comment ces approches ont évolué vers un modèle hybride appelé Scrumban.
 
 Nous analyserons l’origine des méthodes, leurs principes, leur fonctionnements, leur forces et leur limites, avant d’établir une comparaison structurée entre les trois méthodes.
 
@@ -45,7 +43,7 @@ L'objectif est que les cartes se déplacent de façon fluide et régulière à t
 Chaque colonne doit avoir une définition claire : quand est-ce qu'une tâche peut y entrer ? Quand peut-elle en sortir ? Ces règles évitent les ambiguïtés.
 
 ### 5. Mettre en place des boucles de feedback  
-EXPLIQUER
+-------------------EXPLIQUER
 
 ### 6. S’améliorer en continu  
 Kanban encourage l'équipe à analyser régulièrement ses performances et à améliorer son processus de façon incrémentale.
@@ -120,7 +118,7 @@ Cet exemple illustre le principe d’amélioration continue propre à Kanban.
 - Flexibilité totale : les priorités peuvent changer à tout moment  
 - Permet d'identifier rapidement les blocages et goulots d'étranglement  
 
----------DEFINIR GOULOT D'ÉTRANGLEMENT
+-------------------DEFINIR GOULOT D'ÉTRANGLEMENT
 
 ### Limites
 
@@ -150,9 +148,9 @@ Facilite le processus Scrum. Il retire les obstacles et protège l'équipe.
 - **Équipe de développement**  
 Équipe auto-organisée qui réalise le travail. Généralement 3 à 9 personnes.
 
-📌 **Product Owner (PO)** : Personne responsable de définir ce que l'équipe doit construire et dans quel ordre. Elle représente les intérêts des utilisateurs et du métier.  
+**Product Owner (PO)** : Personne responsable de définir ce que l'équipe doit construire et dans quel ordre. Elle représente les intérêts des utilisateurs et du métier.  
 
-📌 **Scrum Master (SM)** : Garant du bon déroulement du processus Scrum. Il aide l'équipe à s'améliorer et supprime les obstacles (blocages techniques, organisationnels…).
+**Scrum Master (SM)** : Garant du bon déroulement du processus Scrum. Il aide l'équipe à s'améliorer et supprime les obstacles (blocages techniques, organisationnels…).
 
 ---
 
@@ -173,22 +171,22 @@ Facilite le processus Scrum. Il retire les obstacles et protège l'équipe.
 
 ## 4. Avantages et limites de Scrum
 
-### ✅ Avantages
+### Avantages
 
 - Structure claire avec rôles, réunions et livrables bien définis  
 - Livraison régulière de valeur à chaque sprint  
 - Forte implication des parties prenantes via les Sprint Reviews  
 - Amélioration continue intégrée via les rétrospectives  
-- Excellent pour les projets avec des objectifs évolutifs mais des délais définis  
+- Excellent pour les projets avec des objectifs évolutifs mais des délais définis
 
-### ⚠️ Limites
+### Limites
 
 - Lourdeur des cérémonies pour les petites équipes ou projets simples  
 - Difficile d'intégrer des tâches urgentes en cours de sprint  
 - Nécessite une bonne maîtrise de la méthode (risque de « Scrum Theater »)  
 - Estimation en story points difficile à appréhender au début  
 
-📌 **Scrum Theater** : Situation où une équipe applique les rituels de Scrum en surface (réunions, sprints…) sans en comprendre l'esprit, sans bénéficier réellement de la méthode.
+**Scrum Theater** : Situation où une équipe applique les rituels de Scrum en surface (réunions, sprints…) sans en comprendre l'esprit, sans bénéficier réellement de la méthode.
 
 ---
 
@@ -218,7 +216,7 @@ Le Scrumban est apparu en 2008, popularisé par Corey Ladas dans son livre « Sc
 - Un flux de travail continu : pas besoin d'attendre la fin d'un sprint pour livrer  
 - La méthode du flux tiré : on commence une nouvelle tâche quand de la capacité est disponible  
 
-📌 **Flux tiré (Pull System)** : Système où une nouvelle tâche n'est démarrée que lorsque l'équipe a de la capacité disponible (une case se libère). Opposé au flux poussé où on assigne le travail de l'extérieur.
+**Flux tiré (Pull System)** : Système où une nouvelle tâche n'est démarrée que lorsque l'équipe a de la capacité disponible (une case se libère). Opposé au flux poussé où on assigne le travail de l'extérieur.
 
 ---
 
@@ -226,7 +224,7 @@ Le Scrumban est apparu en 2008, popularisé par Corey Ladas dans son livre « Sc
 
 L'une des caractéristiques clés du Scrumban est la planification déclenchée par le niveau de remplissage du backlog actif, plutôt qu'à date fixe.
 
-⚡ **Règle de déclenchement de la planification**
+**Règle de déclenchement de la planification**
 
 En Scrumban, la réunion de planification est déclenchée quand le nombre de tâches disponibles dans le backlog tombe en dessous d'un seuil défini (ex. : moins de 3 tâches restantes). On ne planifie que lorsque c'est nécessaire.
 
@@ -241,8 +239,8 @@ Le tableau Scrumban est plus élaboré qu'un tableau Kanban simple, car il intè
 | BACKLOG   | PRÊT      | ANALYSE     | DEV      | TEST     | LIVRÉ        | BLOQUÉ     |
 |------------|------------|--------------|----------|----------|--------------|------------|
 | Feature B  | Feature A  | Bug fix #3   | Login UI | Paiement | Page accueil |            |
-| Feature C  | Feature D  |              |          | API test |              | DB connect |
-| Feature E  |            |              |          |          |              |            |
+| Feature C  | Feature E  |              |          | API test |              | DB connect |
+| Feature D  |            |              |          |          |              |            |
 
 
 La colonne « Prêt » contient les tâches prioritaires sélectionnées et prêtes à être développées — l'équivalent du Sprint Backlog en Scrum. La colonne « Bloqué » signale les tâches qui ne peuvent pas avancer pour une raison externe.
@@ -251,7 +249,7 @@ La colonne « Prêt » contient les tâches prioritaires sélectionnées et prê
 
 ## 5. Avantage et limites de Scrumban
 
-### ✅ Avantages
+### Avantages
 
 - Idéal pour une transition progressive entre Scrum et Kanban  
 - Flexibilité accrue par rapport à Scrum pur  
@@ -259,7 +257,7 @@ La colonne « Prêt » contient les tâches prioritaires sélectionnées et prê
 - Adapté aux équipes avec à la fois des projets planifiés et des demandes urgentes imprévues  
 - Favorise la livraison continue sans sacrifier la vision long terme  
 
-### ⚠️ Limites
+### Limites
 
 - Moins standardisé : peut créer de la confusion si les règles ne sont pas clarifiées  
 - Nécessite une équipe mature qui comprend bien les deux méthodes parents  
@@ -287,21 +285,21 @@ La colonne « Prêt » contient les tâches prioritaires sélectionnées et prê
 
 ## 1. Comment choisir ?
 
-### 🗂️ Choisissez Kanban si…
+### Choisissez Kanban si…
 
 - Votre travail est imprévisible  
 - Vous gérez un flux continu  
 - Pas de délai fixe  
 - Équipe support / ops  
 
-### 🏃 Choisissez Scrum si…
+### Choisissez Scrum si…
 
 - Projet avec délais définis  
 - Besoin de structure forte  
 - Équipe dédiée au projet  
 - Livraisons régulières prévues  
 
-### 🔀 Choisissez Scrumban si…
+### Choisissez Scrumban si…
 
 - Mélange de projets et flux  
 - Transition entre méthodes  
