@@ -102,7 +102,7 @@ Le WIP représente l'ensemble du travail en cours Son but principal est de **gar
 Scrumban apparaît vers 2008 pour aider les équipes Scrum qui souhaitent introduire plus de fluidité dans leur fonctionnement, souvent pour des projets complexes ou de maintenance.
 
 ## 2. Pourquoi Scrumban est apparu
-Kanban vient combler certaines frustrations de Scrum :
+Scrum vient combler certaines frustrations de Kanban :
 * Sprints trop rigides pour intégrer des urgences.
 * Effet "tunnel" ou surcharge de validations en toute fin de sprint.
 
