@@ -42,8 +42,15 @@ L'objectif est que les cartes se déplacent de façon fluide et régulière à t
 ### 4. Rendre explicites les règles du processus  
 Chaque colonne doit avoir une définition claire : quand est-ce qu'une tâche peut y entrer ? Quand peut-elle en sortir ? Ces règles évitent les ambiguïtés.
 
-### 5. Mettre en place des boucles de feedback  
--------------------EXPLIQUER
+### 5. Mettre en place des boucles de feedback
+Ce sont des points de contact réguliers (cadences) pour ajuster le flux et la stratégie :
+
+Réunions opérationnelles (Daily) : Point quotidien de 10 min pour identifier les blocages sur le tableau.
+
+Revues de flux : Analyse des indicateurs (délais, qualité) pour améliorer le processus.
+
+Réunions de réapprovisionnement : Sélection des nouvelles tâches à intégrer dans le flux.
+
 
 ### 6. S’améliorer en continu  
 Kanban encourage l'équipe à analyser régulièrement ses performances et à améliorer son processus de façon incrémentale.
@@ -71,7 +78,7 @@ Chaque colonne peut comporter une limite de travail en cours. Lorsqu’une colon
 
 Cette règle permet d’éviter la surcharge et de mettre en évidence les blocages.
 
--------------------SCHÉMA
+![Kanban Board](./shema_kanban_board.png)
 
 ---
 
@@ -118,7 +125,10 @@ Cet exemple illustre le principe d’amélioration continue propre à Kanban.
 - Flexibilité totale : les priorités peuvent changer à tout moment  
 - Permet d'identifier rapidement les blocages et goulots d'étranglement  
 
--------------------DEFINIR GOULOT D'ÉTRANGLEMENT
+**Définition : Goulot d'étranglement**
+  Lors d’un processus où la capacité de travail est inférieure à la demande, provoquant un ralentissement ou un blocage de l'ensemble du flux.
+
+  Identification : Dans Kanban, il se visualise par une accumulation anormale de cartes dans une seule colonne du tableau.
 
 ### Limites
 
