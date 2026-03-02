@@ -115,9 +115,9 @@ Cet exemple illustre le principe d’amélioration continue propre à Kanban.
 
 ---
 
-## 5. Forces et limites de Kanban
+## 5. Avantage et limites de Kanban
 
-### Forces
+### Avantage
 
 - Simplicité de mise en place : pas de rôles ni de réunions imposées  
 - Excellent pour les flux de travail continus (support, maintenance, opérations)  
