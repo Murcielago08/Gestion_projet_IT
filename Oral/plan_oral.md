@@ -88,7 +88,7 @@ Kanban repose sur des métriques centrées sur le flux :
 
 Ces indicateurs permettent d’identifier les ralentissements et d’améliorer le processus.
 
----
+--- 
 
 ## 4. Exemple concret d’application
 
