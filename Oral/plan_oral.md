@@ -1,153 +1,335 @@
 # Présentation : Kanban et Scrumban
 
 ## Introduction
-L’objectif de cette présentation est d’expliquer le fonctionnement de la méthode Kanban dans un contexte réel d’équipe projet puis de montrer comment cette approche a évolué vers un modèle hybride appelé Scrumban.
-Nous analyserons l’origine de la méthode  ses principes  son fonctionnement concret  ses forces et ses limites  avant d’établir une comparaison structurée avec Scrumban
+
+L’objectif de cette présentation est d’expliquer le fonctionnement de la méthode Kanban dans un contexte réel d’équipe projet,  
+-------------SCRUM  
+puis de montrer comment cette approche a évolué vers un modèle hybride appelé Scrumban.
+
+Nous analyserons l’origine des méthodes, leurs principes, leur fonctionnements, leur forces et leur limites, avant d’établir une comparaison structurée entre les trois méthodes.
 
 ---
 
 # I. La méthode Kanban
 
 ## 1. Origine et contexte
-La méthode Kanban trouve son origine dans les années 1950 au sein de l’entreprise Toyota Elle s’inscrit dans la philosophie du Lean Manufacturing, visant à optimiser les flux de production et à réduire les gaspillages.
-Dans les années 2000, David J. Anderson adapte ces principes au développement logiciel et aux environnements de gestion de projet.
 
-Kanban répond principalement aux problématiques suivantes
-* Surcharge de travail 
-* Accumulation de tâches en parallèle 
-* Retards fréquents 
-* Manque de visibilité sur l’avancement 
-* Goulets d’étranglement non identifiés 
+Le mot « Kanban » vient du japonais, il signifie « panneau ». La méthode est née dans les usines Toyota dans les années 1940, dans le cadre du Système de Production Toyota. Elle s’inscrit dans la philosophie du Lean Manufacturing, visant à optimiser les flux de production et à réduire les gaspillages. L'idée centrale : ne produire que ce qui est demandé, au moment où s’est demandé — on ne fabrique un article que lorsque le poste suivant en a besoin.
+
+Dans les années 2000, David Anderson a adapté ce concept au développement logiciel, créant la « méthode Kanban » telle qu'on la connaît aujourd'hui.
+
+Kanban répond principalement aux problématiques suivantes :
+
+- surcharge de travail  
+- accumulation de tâches en parallèle  
+- retards fréquents  
+- manque de visibilité sur l’avancement  
+- goulets d’étranglement non identifiés  
 
 ---
 
 ## 2. Principes fondamentaux
-Kanban repose sur six pratiques principales
-1. Visualiser le travail 
-2. Limiter le travail en cours (WIP – Work In Progress) 
-3. Gérer le flux 
-4. Rendre explicites les règles du processus 
-5. Mettre en place des boucles de feedback 
-6. S’améliorer en continu 
 
-La logique centrale est une logique de flux continu fondée sur un système « pull » (flux tiré) : une tâche n’entre dans le processus que lorsqu’il y a de la capacité disponible
+Kanban repose sur six pratiques principales :
 
----
+### 1. Visualiser le travail  
+Toutes les tâches sont représentées sur un tableau divisé en colonnes, chaque colonne correspondant à une étape du processus.
 
-## 3. Fonctionnement concret et Processus
+### 2. Limiter le travail en cours (WIP – Work In Progress)  
+On fixe un nombre maximum de tâches autorisées dans chaque colonne.
 
-### a) Le flux de travail : Du Backlog à la livraison
-L’outil central est le tableau Kanban Contrairement aux idées reçues, il ne se limite pas à "À faire / En cours / Terminé". Pour refléter la réalité du processus, les étapes sont plus détaillées :
-* **Backlog :** Le réservoir de toutes les demandes 
-* **À faire (To Do) :** On "récupère" (pull) les tâches du backlog pour s'engager à les traiter.
-* **En cours (Développement) :** L'action principale.
-* **Revue (Code Review / QA) :** Étape de validation indispensable.
-* **Terminé (Done).**
+### 3. Gérer le flux  
+L'objectif est que les cartes se déplacent de façon fluide et régulière à travers le tableau. On cherche à éviter les blocages et les files d'attente.
 
-*(Ajouter un visuel : Image d'un tableau Kanban détaillé avec les colonnes Backlog, To Do, Dev, Review, Done)* 
+### 4. Rendre explicites les règles du processus  
+Chaque colonne doit avoir une définition claire : quand est-ce qu'une tâche peut y entrer ? Quand peut-elle en sortir ? Ces règles évitent les ambiguïtés.
 
-### b) Les règles explicites : DoR et DoD
-Pour fluidifier le passage d'une colonne à l'autre, on rend les règles explicites :
-* **DoR (Definition of Ready) :** Les critères requis pour qu'une tâche puisse *entrer* dans une étape (ex: le ticket a une description claire avant de passer en "À faire").
-* **DoD (Definition of Done) :** Les critères requis pour *terminer* une étape (ex: les tests sont validés avant de passer en "Revue").
+### 5. Mettre en place des boucles de feedback  
+EXPLIQUER
 
-### c) La limitation du WIP (Work In Progress)
-Le WIP représente l'ensemble du travail en cours Son but principal est de **garantir la fluidité** et d'éviter les goulots d'étranglement.
-* La limite est souvent calculée en fonction du nombre de personnes (ex: une limite de WIP globale ou par colonne de 3 tâches pour une équipe de 4 personnes).
-* **Conséquence :** Si la limite est atteinte, l'équipe ne commence pas de nouvelle tâche. Les membres doivent s'entraider pour terminer ce qui est en cours, favorisant ainsi l'intelligence collective 
+### 6. S’améliorer en continu  
+Kanban encourage l'équipe à analyser régulièrement ses performances et à améliorer son processus de façon incrémentale.
+
+La logique centrale est une logique de flux continu fondée sur un système « pull » : une tâche n’entre dans le processus que lorsqu’il y a de la capacité disponible.
+
+Kanban ne repose pas sur des itérations fixes, mais sur une optimisation permanente du temps de livraison.
 
 ---
 
-## 4. Artefacts, Indicateurs et Exemple concret
+## 3. Fonctionnement concret
 
-### a) Les indicateurs de flux (Métriques)
-* **Lead Time :** temps total entre la demande et la livraison
-* **Cycle Time :** temps nécessaire pour traiter une tâche une fois commencée.
-* **Throughput (Débit) :** nombre d’éléments livrés sur une période donnée.
-* **Diagramme de flux cumulatif (CFD) :** permet de visualiser les blocages instantanément.
+### a) Le Kanban board
 
-### b) L'importance du Débit (Throughput) et la prévisibilité
-* **Graphique 1 : Livraison non régulière.** Des pics et des creux. Signifie que le flux est bloqué puis relâché d'un coup. Difficile de faire des prévisions.
-* **Graphique 2 : Livraison régulière.** Le rythme est constant. 
+Lecture du tableau : Chaque carte représente une tâche. Elle commence à gauche avec « À faire », avance vers la droite au fur et à mesure de sa progression, et se retrouve dans « Terminé » une fois livrée.
 
-**Pourquoi c'est utile ?** Si on a un débit régulier (ex: 5 tâches par semaine) et un backlog de 20 tâches, on peut mathématiquement estimer la date d'arrivée du projet dans 4 semaines. Kanban permet donc une excellente prévisibilité.
+L’outil central qu'est le tableau Kanban est structuré en colonnes représentant les étapes du processus :
 
-*(Ajouter un visuel : Graphiques comparatifs de débit)* 
+- À faire  
+- En cours (avec limite WIP)  
+- En test  
+- Terminé  
 
-### c) Exemple d’application sur 2 semaines
-*Ici, on illustre la vie d'une équipe sur une courte période* 39].
-* **Semaine 1 :** 6 demandes dans le backlog. L'équipe respecte son WIP de 3, mais s'aperçoit que les tâches s'accumulent à l'étape "Revue". Le Cycle Time augmente.
-* **Action :** L'équipe se réunit (boucle de feedback) et décide que les développeurs aideront temporairement à la revue pour débloquer la colonne.
-* **Semaine 2 :** Retour à un flux régulier, amélioration du débit.
+Chaque colonne peut comporter une limite de travail en cours. Lorsqu’une colonne atteint sa limite, aucune nouvelle tâche ne peut y entrer tant qu’une autre n’en est pas sortie.
+
+Cette règle permet d’éviter la surcharge et de mettre en évidence les blocages.
+
+-------------------SCHÉMA
+
+---
+
+### b) Les indicateurs de performance
+
+Kanban repose sur des métriques centrées sur le flux :
+
+- **Lead Time** : Durée totale entre le moment où une tâche est créée (demandée) et le moment où elle est livrée (terminée). C'est la métrique principale de Kanban.  
+- **Cycle Time** : Durée entre le moment où une équipe commence à travailler sur une tâche et le moment où elle est terminée. Différent du Lead Time qui inclut aussi le temps d'attente initial.  
+- **Throughput** : Nombre de tâches terminées par unité de temps (par exemple, 5 tâches par semaine). Indicateur de la productivité de l'équipe.  
+- **Diagramme de flux cumulatif (Cumulative Flow Diagram)**  
+
+Ces indicateurs permettent d’identifier les ralentissements et d’améliorer le processus.
+
+---
+
+## 4. Exemple concret d’application
+
+Prenons l’exemple d’une équipe développant une application mobile.
+
+### Semaine 1 :
+- 6 demandes dans le backlog  
+- Limite WIP fixée à 3  
+- 2 fonctionnalités livrées  
+
+Un blocage est identifié en phase de test. L’équipe décide alors d’ajuster la répartition des tâches pour fluidifier cette étape.
+
+### Semaine 2 :
+- Amélioration du cycle time  
+- Diminution des tâches en attente  
+- Meilleure anticipation des goulots d’étranglement  
+
+Cet exemple illustre le principe d’amélioration continue propre à Kanban.
 
 ---
 
 ## 5. Forces et limites de Kanban
 
 ### Forces
-* **Réactivité et Agilité :** Adaptation continue aux changements sans attendre la fin d'un cycle
-* Mise en place sans rupture (on part de l'existant).
-* Idéal pour la maintenance, le support et les flux continus
-* Rend les blocages immédiatement visibles (grâce au WIP).
 
-### Limites et Dérives 
-* **Moins structurant que Scrum :** Pas de réunions imposées (planning, rétro), ce qui demande une **grande maturité et discipline** de l'équipe pour ne pas tomber dans l'anarchie
-* La gestion fine des limites WIP est difficile à calibrer au début.
+- Simplicité de mise en place : pas de rôles ni de réunions imposées  
+- Excellent pour les flux de travail continus (support, maintenance, opérations)  
+- Visualisation immédiate de l'état du travail  
+- Flexibilité totale : les priorités peuvent changer à tout moment  
+- Permet d'identifier rapidement les blocages et goulots d'étranglement  
+
+---------DEFINIR GOULOT D'ÉTRANGLEMENT
+
+### Limites
+
+- Moins adapté aux projets avec des délais fixes et des livrables définis à l'avance  
+- Sans discipline, les limites WIP peuvent être ignorées, perdant l'effet bénéfique  
+- Peu de structure pour la planification à long terme  
+- Ne prévoit pas de rétrospective formelle (amélioration continue moins structurée)  
 
 ---
 
-# II. Scrumban : le modèle hybride
+# II. Scrum
+
+## 1. Qu'est-ce que c'est ?
+
+Scrum est un cadre de travail, créé par Jeff Sutherland et Ken Schwaber dans les années 1990. Il organise le travail en cycles courts et répétables appelés « sprints », avec des rôles et des réunions bien définis.
+
+---
+
+## 2. Les 3 rôles de Scrum
+
+- **Product Owner**  
+Représente le client. Il définit les priorités et gère le Product Backlog.  
+
+- **Scrum Master**  
+Facilite le processus Scrum. Il retire les obstacles et protège l'équipe.  
+
+- **Équipe de développement**  
+Équipe auto-organisée qui réalise le travail. Généralement 3 à 9 personnes.
+
+📌 **Product Owner (PO)** : Personne responsable de définir ce que l'équipe doit construire et dans quel ordre. Elle représente les intérêts des utilisateurs et du métier.  
+
+📌 **Scrum Master (SM)** : Garant du bon déroulement du processus Scrum. Il aide l'équipe à s'améliorer et supprime les obstacles (blocages techniques, organisationnels…).
+
+---
+
+## 3. Les livrables de Scrum
+
+- **Product Backlog** : Liste ordonnée de toutes les fonctionnalités, améliorations et corrections souhaitées pour le produit. C'est la « liste de courses » du projet, gérée par le Product Owner.
+
+- **Sprint Backlog** : Liste des tâches que l'équipe s'engage à réaliser pendant un sprint donné. C'est un sous-ensemble du Product Backlog sélectionné en début de sprint.
+
+- **Incrément** : Version fonctionnelle et potentiellement livrable du produit, produite à la fin de chaque sprint. Chaque incrément s'ajoute aux précédents.
+
+- **User Story** : Description courte d'une fonctionnalité du point de vue de l'utilisateur. Format standard :  
+« En tant que [rôle], je veux [action] afin de [bénéfice] ».
+
+- **Points d'histoire (Story Points)** : Unité de mesure abstraite représentant la complexité d'une tâche, et non sa durée. L'équipe vote ensemble pour estimer chaque tâche.
+
+---
+
+## 4. Avantages et limites de Scrum
+
+### ✅ Avantages
+
+- Structure claire avec rôles, réunions et livrables bien définis  
+- Livraison régulière de valeur à chaque sprint  
+- Forte implication des parties prenantes via les Sprint Reviews  
+- Amélioration continue intégrée via les rétrospectives  
+- Excellent pour les projets avec des objectifs évolutifs mais des délais définis  
+
+### ⚠️ Limites
+
+- Lourdeur des cérémonies pour les petites équipes ou projets simples  
+- Difficile d'intégrer des tâches urgentes en cours de sprint  
+- Nécessite une bonne maîtrise de la méthode (risque de « Scrum Theater »)  
+- Estimation en story points difficile à appréhender au début  
+
+📌 **Scrum Theater** : Situation où une équipe applique les rituels de Scrum en surface (réunions, sprints…) sans en comprendre l'esprit, sans bénéficier réellement de la méthode.
+
+---
+
+# III. Scrumban : le modèle hybride
 
 ## 1. Définition et origine
-Scrumban apparaît vers 2008 pour aider les équipes Scrum qui souhaitent introduire plus de fluidité dans leur fonctionnement, souvent pour des projets complexes ou de maintenance.
 
-## 2. Pourquoi Scrumban est apparu
-Scrum vient combler certaines frustrations de Kanban :
-* Sprints trop rigides pour intégrer des urgences.
-* Effet "tunnel" ou surcharge de validations en toute fin de sprint.
+Scrumban est une méthode hybride combinant la structure des sprints et des rôles de Scrum avec la visualisation et les limites WIP de Kanban. Elle offre flexibilité et prévisibilité.
 
-## 3. Fonctionnement de Scrumban
-Scrumban prend la structure de l'un et le moteur de l'autre :
-* **De Scrum, il garde :** les rôles définis (PO, Scrum Master), un backlog priorisé, les cérémonies régulières (Daily, Rétrospective), et souvent une notion d'itération (planning à court terme) 
-* **De Kanban, il intègre :** * **La limite de WIP au sein même du flux du sprint :** Cela empêche les développeurs de tout commencer en même temps en début de sprint.
-  * **Le pilotage par le débit (Throughput) :** Au lieu d'utiliser uniquement les points d'effort (vélocité Scrum), l'équipe utilise son débit réel et régulier pour décider combien de tâches elle peut prendre.
-  * **Planification "On-Demand" :** On ne planifie pas tout le sprint d'un coup, on tire de nouvelles tâches quand le WIP le permet.
+Le Scrumban est apparu en 2008, popularisé par Corey Ladas dans son livre « Scrumban ». Il est né d'un besoin réel : permettre aux équipes pratiquant Scrum de migrer progressivement vers Kanban, ou à l'inverse, d'ajouter de la structure à leur Kanban.
 
 ---
 
-# III. Comparaison structurée
+## 2. Comment fonctionne Scrumban ?
 
-*(Ce tableau répond à la consigne de comparer avec Scrum)* 
+### Ce que Scrumban emprunte à Scrum
 
-| Critère | Scrum | Kanban | Scrumban |
-|----------|--------|----------|------------|
-| **Cadence / Planification** | Sprints fixes et planifiés | Flux continu (On-Demand) | Mixte : cadence Scrum avec flux tiré à l'intérieur |
-| **Limitation du WIP** | Indirecte (par la capacité du sprint) | Strictement Obligatoire | Obligatoire sur le tableau |
-| **Rôles** | PO, Scrum Master, Développeurs | Non imposés (évolution de l'existant) | Rôles de Scrum généralement conservés |
-| **Prévisibilité** | Basée sur la Vélocité (points) | Basée sur le Débit et le Cycle Time | Utilise souvent le Débit plutôt que la vélocité |
+- Des itérations (sprints) optionnelles ou raccourcies pour cadencer le travail  
+- La planification périodique des priorités  
+- Les rétrospectives pour l'amélioration continue  
+- Un backlog priorisé de tâches  
+
+### Ce que Scrumban emprunte à Kanban
+
+- Un tableau visuel avec colonnes et cartes  
+- Des limites WIP sur les colonnes (optionnel mais recommandé)  
+- Un flux de travail continu : pas besoin d'attendre la fin d'un sprint pour livrer  
+- La méthode du flux tiré : on commence une nouvelle tâche quand de la capacité est disponible  
+
+📌 **Flux tiré (Pull System)** : Système où une nouvelle tâche n'est démarrée que lorsque l'équipe a de la capacité disponible (une case se libère). Opposé au flux poussé où on assigne le travail de l'extérieur.
 
 ---
 
-# IV. Contextes d’utilisation
+## 3. La planification à la demande
 
-* **Kanban est particulièrement adapté :** équipes de support, gestion/correction de bugs de production, flux de demandes imprévisibles, environnements très changeants
-* **Scrumban est pertinent :** équipes Scrum souhaitant évoluer pour gérer des urgences, contextes avec interruptions fréquentes, ou transition progressive vers du pur Kanban.
+L'une des caractéristiques clés du Scrumban est la planification déclenchée par le niveau de remplissage du backlog actif, plutôt qu'à date fixe.
+
+⚡ **Règle de déclenchement de la planification**
+
+En Scrumban, la réunion de planification est déclenchée quand le nombre de tâches disponibles dans le backlog tombe en dessous d'un seuil défini (ex. : moins de 3 tâches restantes). On ne planifie que lorsque c'est nécessaire.
+
+Exemple : si votre équipe fixe le seuil à 5 tâches et que le backlog actif n'en a plus que 4, une réunion de planification est automatiquement convoquée.
+
+---
+
+## 4. Le tableau Scrumban
+
+Le tableau Scrumban est plus élaboré qu'un tableau Kanban simple, car il intègre une zone « prête » (ready) qui joue le rôle du Sprint Backlog :
+
+| BACKLOG   | PRÊT      | ANALYSE     | DEV      | TEST     | LIVRÉ        | BLOQUÉ     |
+|------------|------------|--------------|----------|----------|--------------|------------|
+| Feature B  | Feature A  | Bug fix #3   | Login UI | Paiement | Page accueil |            |
+| Feature C  | Feature D  |              |          | API test |              | DB connect |
+| Feature E  |            |              |          |          |              |            |
+
+
+La colonne « Prêt » contient les tâches prioritaires sélectionnées et prêtes à être développées — l'équivalent du Sprint Backlog en Scrum. La colonne « Bloqué » signale les tâches qui ne peuvent pas avancer pour une raison externe.
+
+---
+
+## 5. Avantage et limites de Scrumban
+
+### ✅ Avantages
+
+- Idéal pour une transition progressive entre Scrum et Kanban  
+- Flexibilité accrue par rapport à Scrum pur  
+- Maintient une structure suffisante pour éviter le chaos  
+- Adapté aux équipes avec à la fois des projets planifiés et des demandes urgentes imprévues  
+- Favorise la livraison continue sans sacrifier la vision long terme  
+
+### ⚠️ Limites
+
+- Moins standardisé : peut créer de la confusion si les règles ne sont pas clarifiées  
+- Nécessite une équipe mature qui comprend bien les deux méthodes parents  
+- Risque de « cherry-picking » : prendre le mauvais de chaque méthode plutôt que le bon  
+- Moins de littérature et de certifications disponibles  
+
+---
+
+# IV. Comparatif
+
+## Tableau récapitulatif
+
+| Critère | Kanban | Scrum | Scrumban |
+|----------|---------|--------|-----------|
+| Itérations | Non (flux continu) | Oui (sprints) | Optionnel |
+| Rôles définis | Non | Oui (PO, SM, Dev) | Minimal |
+| Réunions imposées | Non | Oui (Daily, Retro…) | Légères |
+| Limite en-cours (WIP) | Oui (obligatoire) | Non | Oui |
+| Changements en cours | Autorisés | Non (attendre sprint) | Partiellement |
+| Planification | Au fil de l'eau | Par sprint | Périodique |
+| Mesuré par | Lead time, WIP | Vélocité | Les deux |
+| Idéal pour | Support, ops, flux | Projets structurés | Transition, hybride |
+
+---
+
+## 1. Comment choisir ?
+
+### 🗂️ Choisissez Kanban si…
+
+- Votre travail est imprévisible  
+- Vous gérez un flux continu  
+- Pas de délai fixe  
+- Équipe support / ops  
+
+### 🏃 Choisissez Scrum si…
+
+- Projet avec délais définis  
+- Besoin de structure forte  
+- Équipe dédiée au projet  
+- Livraisons régulières prévues  
+
+### 🔀 Choisissez Scrumban si…
+
+- Mélange de projets et flux  
+- Transition entre méthodes  
+- Flexibilité + structure  
+- Équipe expérimentée  
+
+---
+
+# V. Contextes d’utilisation
+
+### Kanban est particulièrement adapté :
+
+- aux équipes de support  
+- aux environnements instables  
+- aux projets avec flux continu de demandes  
+
+### Scrumban est pertinent :
+
+- pour des équipes Scrum souhaitant évoluer  
+- dans des contextes avec interruptions fréquentes  
+- lorsqu’un équilibre entre cadre et flexibilité est nécessaire  
 
 ---
 
 # Conclusion
 
-Kanban n'est pas qu'un tableau de post-its, c'est un système rigoureux centré sur l’optimisation du flux et la prévisibilité mathématique (grâce au débit). 
-Scrumban constitue la passerelle idéale, permettant d’introduire ces puissantes mécaniques de flux dans un cadre Scrum rassurant.
-Ces approches ne s’opposent pas ; elles sont complémentaires et répondent à des niveaux de maturité et des typologies de projets différents.
+Kanban est une méthode centrée sur l’optimisation du flux et la limitation du travail en cours. Elle offre une grande flexibilité et favorise l’amélioration continue.
 
----
+Scrumban constitue une évolution hybride permettant d’introduire les pratiques Kanban dans un cadre Scrum existant.
 
-# V. Débat et Questions / Réponses
-
-*(10 minutes prévues pour l'échange)* 
-
-**Questions pour lancer le débat avec la classe :** 
-1. D'après ce que nous avons vu sur la limite stricte du WIP, pensez-vous que Kanban serait adapté à un projet avec une date de livraison stricte et non négociable ? 
-2. Pour ceux qui ont déjà fait des projets scolaires en groupe, quels problèmes le "WIP par personne" aurait-il pu vous éviter ? 
-3. Lequel des deux modèles (Kanban ou Scrumban) vous semble le plus facile à mettre en place dans une entreprise très hiérarchisée et pourquoi ? 
+Ces approches ne s’opposent pas ; elles répondent à des besoins organisationnels différents et peuvent être complémentaires selon le contexte du projet.
