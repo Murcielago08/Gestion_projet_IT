@@ -293,44 +293,50 @@ La colonne « Prêt » contient les tâches prioritaires sélectionnées et prê
 
 ---
 
-## 1. Comment choisir ?
+## Choix de la méthode et contextes d’utilisation
 
-### Choisissez Kanban si…
+### Kanban
 
-- Votre travail est imprévisible  
-- Vous gérez un flux continu  
-- Pas de délai fixe  
-- Équipe support / ops  
+**À privilégier si :**
+- Le travail est imprévisible  
+- Vous gérez un flux continu de demandes  
+- Il n’y a pas de délais fixes  
+- Vous êtes une équipe support, maintenance ou opérations  
 
-### Choisissez Scrum si…
-
-- Projet avec délais définis  
-- Besoin de structure forte  
-- Équipe dédiée au projet  
-- Livraisons régulières prévues  
-
-### Choisissez Scrumban si…
-
-- Mélange de projets et flux  
-- Transition entre méthodes  
-- Flexibilité + structure  
-- Équipe expérimentée  
+**Particulièrement adapté :**
+- Aux environnements instables  
+- Aux équipes recevant des demandes fréquentes et variables  
+- Aux organisations cherchant à optimiser le flux et réduire les blocages  
 
 ---
 
-# V. Contextes d’utilisation
+### Scrum
 
-### Kanban est particulièrement adapté :
+**À privilégier si :**
+- Le projet comporte des délais définis  
+- Une structure forte est nécessaire  
+- L’équipe est dédiée au projet  
+- Des livraisons régulières sont planifiées  
 
-- aux équipes de support  
-- aux environnements instables  
-- aux projets avec flux continu de demandes  
+**Particulièrement adapté :**
+- Aux projets structurés  
+- Aux équipes ayant besoin d’un cadre clair avec rôles et rituels définis  
+- Aux contextes où la planification par cycles (sprints) apporte de la valeur  
 
-### Scrumban est pertinent :
+---
 
-- pour des équipes Scrum souhaitant évoluer  
-- dans des contextes avec interruptions fréquentes  
-- lorsqu’un équilibre entre cadre et flexibilité est nécessaire  
+### Scrumban
+
+**À privilégier si :**
+- Il existe un mélange de projets planifiés et de flux continu  
+- L’équipe est en transition entre Scrum et Kanban  
+- On recherche un équilibre entre flexibilité et structure  
+- L’équipe est expérimentée et autonome  
+
+**Particulièrement adapté :**
+- Aux équipes Scrum souhaitant évoluer vers plus de flexibilité  
+- Aux contextes avec interruptions fréquentes  
+- Aux environnements nécessitant à la fois cadre et adaptabilité  
 
 ---
 
