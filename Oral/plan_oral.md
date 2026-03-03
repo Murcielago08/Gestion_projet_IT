@@ -272,7 +272,7 @@ La colonne « Prêt » contient les tâches prioritaires sélectionnées et prê
 - Moins standardisé : peut créer de la confusion si les règles ne sont pas clarifiées  
 - Nécessite une équipe mature qui comprend bien les deux méthodes parents  
 - Risque de « cherry-picking » : prendre le mauvais de chaque méthode plutôt que le bon  
-- Moins de littérature et de certifications disponibles  
+- Moins de littérature, de formations et de certifications disponibles par rapport aux méthodes pures
 
 ---
 
