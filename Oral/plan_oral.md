@@ -336,7 +336,7 @@ La colonne « Prêt » contient les tâches prioritaires sélectionnées et prê
 **Particulièrement adapté :**
 - Aux équipes Scrum souhaitant évoluer vers plus de flexibilité  
 - Aux contextes avec interruptions fréquentes  
-- Aux environnements nécessitant à la fois cadre et adaptabilité  
+- Aux environnements nécessitant à la fois cadre et adaptabilité
 
 ---
 
